@@ -235,7 +235,9 @@ export const cssConfigDefaults: Readonly<Partial<CSSOptions>> =
   _cssConfigDefaults
 
 export type ResolvedCSSOptions = Omit<CSSOptions, 'lightningcss'> &
-  Required<Pick<CSSOptions, 'transformer' | 'devSourcemap' | 'unresolvedUrlPolicy'>> & {
+  Required<
+    Pick<CSSOptions, 'transformer' | 'devSourcemap' | 'unresolvedUrlPolicy'>
+  > & {
     lightningcss?: LightningCSSOptions
   }
 
